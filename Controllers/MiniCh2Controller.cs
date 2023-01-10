@@ -4,7 +4,7 @@ namespace KFujimuraAllForOneAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class Add2NumbersController : ControllerBase
+public class MiniCh2Controller : ControllerBase
 {
     [HttpGet]
     [Route("Add2Numbers/{num1}/{num2}")]

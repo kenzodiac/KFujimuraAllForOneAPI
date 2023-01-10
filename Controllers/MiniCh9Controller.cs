@@ -4,7 +4,7 @@ namespace KFujimuraAllForOneAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class RestaurantPickerController : ControllerBase
+public class MiniCh9Controller : ControllerBase
 {
     [HttpGet]
     [Route("RestaurantPicker/{category}")]

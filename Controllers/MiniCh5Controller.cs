@@ -4,7 +4,7 @@ namespace KFujimuraAllForOneAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class MadLibController : ControllerBase
+public class MiniCh5Controller : ControllerBase
 {
     [HttpGet]
     [Route("MadLib/{name1}/{verb1}/{sport1}/{musicGenre1}/{pet1}/{petName1}/{name2}/{verb2}/{hobby1}/{musicGenre2}")]

@@ -4,7 +4,7 @@ namespace KFujimuraAllForOneAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class OddOrEvenController : ControllerBase
+public class MiniCh6Controller : ControllerBase
 {
     [HttpGet]
     [Route("OddOrEven/{num}")]

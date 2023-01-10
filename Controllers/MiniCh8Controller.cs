@@ -5,7 +5,7 @@ namespace KFujimuraAllForOneAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class StudentDirectoryController : ControllerBase
+public class MiniCh8Controller : ControllerBase
 {
     public List<StudentListModel> studentsList = new List<StudentListModel>()
       {

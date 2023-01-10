@@ -5,7 +5,7 @@ namespace KFujimuraAllForOneAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class ReverseItController : ControllerBase
+public class MiniCh7Controller : ControllerBase
 {
     [HttpGet]
     [Route("ReverseIt/{input}")]

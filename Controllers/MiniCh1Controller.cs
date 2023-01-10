@@ -4,7 +4,7 @@ namespace KFujimuraAllForOneAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class SayHelloController : ControllerBase
+public class MiniCh1Controller : ControllerBase
 {
     [HttpGet]
     [Route("Hello/{name}")]

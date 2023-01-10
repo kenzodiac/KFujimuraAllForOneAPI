@@ -4,7 +4,7 @@ namespace KFujimuraAllForOneAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class AskingQuestionsController : ControllerBase
+public class MiniCh3Controller : ControllerBase
 {
     [HttpGet]
     [Route("AskingQuestions/{name}/{time}")]

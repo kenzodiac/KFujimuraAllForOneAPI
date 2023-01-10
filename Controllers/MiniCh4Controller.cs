@@ -4,7 +4,7 @@ namespace KFujimuraAllForOneAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class GreaterOrLessThanController : ControllerBase
+public class MiniCh4Controller : ControllerBase
 {
     [HttpGet]
     [Route("GreaterThan/{num1}/{num2}")]
