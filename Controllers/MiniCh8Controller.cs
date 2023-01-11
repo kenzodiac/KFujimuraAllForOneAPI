@@ -327,7 +327,7 @@ public class MiniCh8Controller : ControllerBase
          }
       };
 
-    
+
     //endpoint that gets a student by their first name
     [HttpGet]
     [Route("GetStudentByFirstName/{studentFirstName}")]
@@ -352,6 +352,109 @@ public class MiniCh8Controller : ControllerBase
             }
         }
         return result;
+    }
 
+    //endpoint that gets a student by their last name
+    [HttpGet]
+    [Route("GetStudentByLastName/{studentLastName}")]
+    public StudentListModel GetStudentByLastName(string studentLastName)
+    {
+        StudentListModel result = new StudentListModel()
+        {
+            firstName = "N/A",
+            lastName = "N/A",
+            slackName = "N/A",
+            email = "N/A",
+            hobbies = "N/A"
+        };
+
+        for (int i = 0; i < studentsList.Count; i++)
+        {
+            //condition to check the studenList firstName to our variable firstName
+            if (studentsList[i].lastName == studentLastName)
+            {
+                result = studentsList[i];
+                break;
+            }
+        }
+        return result;
+    }
+
+    //endpoint that gets a student by their slack name
+    [HttpGet]
+    [Route("GetStudentBySlackName/{studentSlackName}")]
+    public StudentListModel GetStudentBySlackName(string studentSlackName)
+    {
+        StudentListModel result = new StudentListModel()
+        {
+            firstName = "N/A",
+            lastName = "N/A",
+            slackName = "N/A",
+            email = "N/A",
+            hobbies = "N/A"
+        };
+
+        for (int i = 0; i < studentsList.Count; i++)
+        {
+            //condition to check the studenList firstName to our variable firstName
+            if (studentsList[i].slackName == studentSlackName)
+            {
+                result = studentsList[i];
+                break;
+            }
+        }
+        return result;
+    }
+
+    //endpoint that gets a student by their email
+    [HttpGet]
+    [Route("GetStudentByEmail/{studentEmail}")]
+    public StudentListModel GetStudentBySlack(string studentEmail)
+    {
+        StudentListModel result = new StudentListModel()
+        {
+            firstName = "N/A",
+            lastName = "N/A",
+            slackName = "N/A",
+            email = "N/A",
+            hobbies = "N/A"
+        };
+
+        for (int i = 0; i < studentsList.Count; i++)
+        {
+            //condition to check the studenList firstName to our variable firstName
+            if (studentsList[i].email == studentEmail)
+            {
+                result = studentsList[i];
+                break;
+            }
+        }
+        return result;
+    }
+
+    //endpoint that gets a student by anything except hobbies
+    [HttpGet]
+    [Route("GetStudentByAnything/{input}")]
+    public StudentListModel GetStudentByAnything(string input)
+    {
+        StudentListModel result = new StudentListModel()
+        {
+            firstName = "N/A",
+            lastName = "N/A",
+            slackName = "N/A",
+            email = "N/A",
+            hobbies = "N/A"
+        };
+
+        for (int i = 0; i < studentsList.Count; i++)
+        {
+            //condition to check the studenList firstName to our variable firstName
+            if (studentsList[i].firstName == input || studentsList[i].lastName == input || studentsList[i].slackName == input || studentsList[i].email == input)
+            {
+                result = studentsList[i];
+                break;
+            }
+        }
+        return result;
     }
 }
